@@ -28,11 +28,12 @@ browser.select_form(nr=0)
 browser.submit()
 browser.select_form(nr=0)
 browser.submit()
-
-print(soup.find(string='6 characters long')
-
-print(soup.find(string='8 characters long')
-
+z = soup.find(string='6 characters long')
+print(soup.find(string='6 characters long'))
+h = soup.find(string='8 characters long')
+print(soup.find(string='8 characters long'))
+print(z)
+print(h)
 browser.form['n'] = reset
 browser.submit()
 
