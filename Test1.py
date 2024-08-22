@@ -28,11 +28,11 @@ browser.select_form(nr=0)
 browser.submit()
 browser.select_form(nr=0)
 browser.submit()
-if soup.find(string="6 characters long") != None
+if soup.find(string="6 characters long") != None:
   print(soup.find(string="6 characters long")
-elif soup.find(string="8 characters long") != None
+elif soup.find(string="8 characters long") != None:
   print(soup.find(string="8 characters long")
-else
+else:
   y == 0
 
 browser.form['n'] = reset
